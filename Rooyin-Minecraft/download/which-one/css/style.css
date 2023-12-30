@@ -40,33 +40,14 @@ p{
 @media all and (min-width: 384px) and (max-width: 767px) {
     body{
         margin: 2em 7.5% 2em 7.5%;
+        padding: 0em 0em 0em 0em;
       }
     
-    .footer{
-        margin-top: 10em;
-    }
-    
-    p{
-        font-size: 16px;
-        margin: auto;
-        line-height: 1.5;
-    }
 }
 
 @media all and (max-width: 384px) {
     body{
         margin: 2em 5% 2em 5%;
+        padding: 0em 0em 0em 0em;
       }
-
-    
-    .footer{
-        margin-top: 3em;
-    }
-    
-    p{
-        font-size: 16px;
-        margin: auto;
-        line-height: 1.5;
-    }
-
 }

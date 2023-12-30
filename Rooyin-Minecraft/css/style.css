@@ -1,0 +1,287 @@
+html{
+    background-image:url(../img/Rooyin-Font.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100%;
+    min-width: 250px;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    direction: rtl;
+    margin: 0em 4em 0em 10em;
+    font-family: "Estedad-MDarvishi", sans-serif;
+    line-height: 1.5;
+    word-break: break-word;
+    text-decoration:none;
+    font-weight: 500;
+    width: 50%;
+    height: 100%;
+
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    color:rgb(63, 71, 79);
+
+}
+
+::selection {
+    background-color:rgb(63, 71, 79);
+    color:aliceblue;
+}
+
+
+svg{
+    margin: 0px 0px 0px 5px;
+    width: 1em;
+    height: 1em;
+    fill:rgb(255, 255, 255);
+}
+
+
+svg.en{
+    margin: 5px;
+    width: 30px;
+    height: 42px;
+}
+
+p{
+    margin: 1em 10px 1em 0em;
+    color:rgb(255, 255, 255);
+}
+
+.t{
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    margin: 0em 0 0em 0em;
+}
+
+button{
+    display: flex;
+    font-family: "Estedad-MDarvishi", sans-serif;
+    font-size: 1.5rem;
+    background-color: rgb(63, 71, 79);
+    margin: 10px 10px 10px 10px;
+    border-radius: 0px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: 600;
+    padding: 8px 22px;
+    font-size: 1.2rem;
+    border: 0px;
+    cursor: pointer;
+    height: 64px;
+    color: rgb(255, 255, 255);
+}
+
+.buttondownload{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00cc99;
+    color:rgb(63, 71, 79);
+}
+
+.svg-download{
+    fill: rgb(255, 255, 255);
+    width: 27px;
+}
+
+.do{
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+}
+
+.atitle{
+    margin: 0em 0.5em 0em 0.5em;
+}
+
+svg.logo{
+    margin: 5px;
+    height: 66px;
+    width: auto;
+    fill: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    justify-content:center;
+    margin: 1em 0em -0.5em 0em;
+}
+
+.subtitle{
+    font-weight: 700;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    margin: 0em;
+}
+
+a{
+    font-size: 20px;
+    font-weight: bold;
+    color:#ffffff;
+    text-decoration:none;
+    margin: auto;
+}
+
+::selection {
+    background-color:rgb(255, 255, 255);
+    color:rgb(63, 71, 79);
+}
+
+.footer {
+    position: fixed;
+    bottom: 1em;
+    left: 3em;
+    height: 44px;
+    width: 100%;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.footer-text{
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+@media all and (min-width: 435px) and (max-width: 730px) {
+    body{
+        margin: 0px 10% 0% 10%;
+        width: 75%;
+    }
+    
+    .atitle{
+        margin: 0em 0.5em 0em 0.5em;
+    }
+    
+    svg.logo{
+        margin: 5px;
+        height: 66px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px 10px 0px;
+        justify-content:center;
+        margin: 1em 0em -0.5em 0em;
+    }
+    
+    .subtitle{
+        font-weight: 700;
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+        margin: 0em;
+    }
+    
+    p{
+        margin: 0.5em;
+        font-size: 1.1rem;
+
+    }
+    
+    button{
+        margin: 10px 10px 10px 10px;
+        font-size: 1.2rem;
+    }
+    
+    .buttondownload{
+        left: -50%;
+        transform: translate(50%, 00%);
+        margin: 0px;
+    }
+    
+    .footer {
+        left: 0em;
+        text-align: center;
+    }
+
+    .t{
+        display: block;
+    }
+
+}
+
+
+@media all and (max-width: 435px) {
+    body{
+        margin: 0em 5% 0em 0em;
+        width: 75%;
+    }
+    
+    .atitle{
+        margin: 0em 0.5em 0em 0.5em;
+    }
+    
+    svg.logo{
+        margin: 5px;
+        height: 55px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px 10px 0px;
+        justify-content:center;
+        margin: 1em 0em -0.5em 0em;
+    }
+    
+    .subtitle{
+        font-weight: 700;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        margin: 0em;
+    }
+    
+    p{
+        font-size: 0.9em;
+        margin: 0.5em;
+    }
+    
+    button{
+        margin: 10px 5px 5px 5px;
+        font-size: 1rem;
+        left: -50%;
+        transform: translate(50%, 00%);
+    }
+    
+    .buttondownload{
+        left: -50%;
+        transform: translate(50%, 00%);
+    }
+    
+    .footer {
+        left: 0em;
+        text-align: center;
+    }
+
+    .t{
+        display: block;
+    }
+
+    .do{
+
+         display: flex;
+    }
+
+    .button-menu{
+        margin: 10px 5px 10px 5px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 10px;
+        height: auto;
+        width: auto;
+        background-color: rgb(255, 255, 255);
+        transition: background-color 0.25s;
+    }
+
+    a{
+        font-size: 16px;
+    }
+
+}
+

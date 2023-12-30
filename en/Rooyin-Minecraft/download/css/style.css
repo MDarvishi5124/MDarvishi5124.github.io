@@ -1,0 +1,94 @@
+button{
+    display: flex;
+    font-family: "Estedad-MDarvishi", sans-serif;
+    font-size: 1.2rem;
+    background-color: #f0f0f0;
+    margin: 10px 10px 10px 10px;
+    border-radius: 0px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: 600;
+    padding: 8px 22px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.buttondownload{
+    background-color: #00cc99;
+    color:#f0f0f0;
+}
+
+svg{
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.div-download{
+    display: flex;
+}
+
+
+.svg-download{
+    width: 20px;
+    margin: 0px 5px 0px 0px;
+    fill: rgb(255, 255, 255);
+}
+
+.svg-dot{
+    width: 20px;
+    fill: rgb(63, 71, 79);;
+}
+
+@media all and (min-width: 600px) and (max-width: 730px) {
+      button{
+        display: flex;
+        font-size: 1.1rem;
+        margin: 10px 5px 10px 5px;
+        padding: 8px 20px;
+    }
+
+    svg{
+        user-select: none;
+        width: 1.2em;
+        height: 1.2em;
+    }
+    
+}
+
+@media all and (min-width: 300px) and (max-width: 600px) {
+    button{
+        display: flex;
+        font-size: 1.1rem;
+        margin: 10px 5px 10px 5px;
+        padding: 8px 20px;
+    }
+    .div-download{
+        display: block;
+    }
+
+    svg{
+        user-select: none;
+        width: 1.2em;
+        height: 1.2em;
+    }
+}
+
+@media all and (max-width: 300px) {
+    button{
+        display: flex;
+        font-size: 1.1rem;
+        margin: 10px 5px 10px 5px;
+        padding: 8px 20px;
+    }
+    .div-download{
+        display: block;
+    }
+
+    
+    svg{
+        user-select: none;
+        width: 1.2em;
+        height: 1.2em;
+    }
+}

@@ -196,7 +196,7 @@ a{
 }
 
 
-@media all and (max-width: 484px) {
+@media all and (max-width: 384px) {
     body{
         margin: 0em 0% 0em 0%;
     }

@@ -1,0 +1,273 @@
+html{
+    background-image:url(../img/index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100%;
+    min-width: 250px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0em 17.5% 0em 17.5%;
+    height: 100%;
+    font-size: 18px;
+    direction: rtl;
+    font-family: "Vazirmatn", sans-serif;
+    line-height: 1.6;
+    word-break: break-word;
+    text-decoration:none;
+    font-variation-settings: "wght" 400;
+  }
+
+h1,h2,h3,h4,h5,h6{
+    color:rgb(63, 71, 79);
+
+}
+
+::selection {
+    background-color:rgb(63, 71, 79);
+    color:aliceblue;
+}
+
+svg{
+    margin: 0px 0px 0px 5px;
+    height: 1.2em;
+    fill:#ffffff;
+}
+
+.title{
+    font-family: "Sorena", "Vazirmatn", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.subtitle{
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: -2em;
+}
+
+
+p{
+    text-align: center;
+    margin-top: 1em;
+}
+
+.t{
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    margin: 0em 0em 0em 0em;
+}
+
+button{
+    display: flex;
+    font-family: "Sorena", sans-serif;
+    background-color: rgb(123 134 146);
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-weight: 400;
+    padding: 16px 26px;
+    font-size: 95%;
+    border: 0px;
+    cursor: pointer;
+    height: 64px;
+    color: #ffffff;
+}
+
+.menu-button{
+    background: url('button-menu.png') no-repeat;
+    width: 150px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
+    padding: 16px 26px 20px 26px;
+}
+
+.buttondownload{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('button-download.png') no-repeat;
+    width: 150px;
+    height: 64px;
+    border: none;
+    cursor: pointer;
+    padding: 16px 26px 20px 26px;
+    color:#f0f0f0;
+    margin-left: 0px;
+}
+
+.svg-download{
+    fill: rgb(255, 255, 255);
+    width: 27px;
+}
+
+.do{
+    justify-content:center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.atitle,.adownload{
+    margin: -1em 0.5em 0em 0.5em;
+    text-align: center
+}
+
+a{
+    color:#00cc99;
+    text-decoration:none;
+}
+
+.footer {
+    position: fixed;
+    bottom: 1em;
+    left: 3em;
+    height: 44px;
+    width: 100%;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.footer-lang{
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: darkgray;
+}
+
+@media all and (min-width: 384px) and (max-width: 860px) {
+    body{
+        margin: 0em 0% 0em 0%;
+    }
+    
+    .title{
+        margin: 0.05em 0em 0.7em 0em;
+        font-size: 40px;
+        padding: 0px;
+    }
+    
+    .subtitle{
+        text-align: center;
+        font-size: 18px;
+        margin: -1.5em 0em 0.0em 0em;
+        padding: 0px;
+    }
+    
+    p{
+        margin: 1.5em;
+        font-size: 18px;
+
+    }
+    
+    button{
+        padding: 6px 16px;
+        margin: 10px 5px 10px 5px;
+        font-size: 84%;
+        left: -50%;
+        transform: translate(50%, 00%);
+    }
+    
+    .footer{
+        margin-top: 1em;
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .atitle,.adownload{
+        margin: 0.25em 0.5em 0.25em 0.5em;
+    }
+    .do{
+        display: flex;
+        flex-wrap: wrap;
+
+   }
+}
+
+
+@media all and (max-width: 484px) {
+    body{
+        margin: 0em 0% 0em 0%;
+    }
+    
+    .title{
+        margin: 0.05em 0em 0.7em 0em;
+        font-size: 36px;
+        padding: 0px;
+    }
+    
+    .subtitle{
+        text-align: center;
+        font-size: 18px;
+        margin: -1.5em 0em 0.0em 0em;
+        padding: 0px;
+    }
+    
+    p{
+        font-size: 16px;
+        margin: 1em;
+    }
+    
+    button{
+        margin: 10px 5px 5px 5px;
+        font-size: 84%;
+        left: -50%;
+        transform: translate(50%, 00%);
+        padding: 6px 10px;
+    }
+    
+    .menu-button{
+        background: url('button-menu-mob.png') no-repeat;
+        width: 116px;
+        height: 64px;
+        border: none;
+        cursor: pointer;
+        padding: 16px 15px 20px 15px;
+    }
+
+    .buttondownload{
+        left: -50%;
+        transform: translate(50%, 00%);
+    }
+    
+    .footer{
+        margin-top: 3em;
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .t{
+        display: block;
+    }
+
+    .atitle,.adownload{
+        margin: 0.25em 0em 0.25em 0em;
+    }
+
+    .do{
+         display: flex;
+         flex-wrap: wrap;
+
+    }
+
+    a{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .footer{
+        font-size: 14px;
+    }
+
+}

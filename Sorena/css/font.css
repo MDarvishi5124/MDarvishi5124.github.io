@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Sorena";
+    src: url("Sorena-Normal.woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SorenaPX";
+    src: url("Sorena-Pixel.woff2");
+    font-weight: 400;
+    font-style: ;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Vazirmatn";
+    src: url("Vazirmatn-VF.woff2") format('woff2 supports variations');
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+}

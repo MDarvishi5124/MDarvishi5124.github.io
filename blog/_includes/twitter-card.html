@@ -1,0 +1,9 @@
+<meta name="twitter:card" content="summary_large_image">
+  {% if page.cover %}
+  <meta name="twitter:image" content="{{ page.cover | prepend: '/assets/' | prepend: site.baseurl | prepend: site.url}}">
+  {% else %}
+  <meta name="twitter:image" content="{{ '/assets/main/zayno-urahara-kisuke-tux.png' | prepend: site.baseurl | prepend: site.url}}">
+  {% endif %}
+  <meta name="twitter:site" content="@danialbehzadi">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | remove: '<p>' | remove: '</p>' }}{% else %}وبلاگ دانیال بهزادی{% endif %}">

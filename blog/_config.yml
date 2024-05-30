@@ -1,0 +1,30 @@
+# Site settings
+title: در جست‌وجوی آزادی
+author: دانیال بهزادی
+email: dani.behzi@ubuntu.com
+description: > # this means to ignore newlines until "baseurl:"
+  منتشر شده با پروانهٔ CC-BY-SA 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://gnu.rocks" # the base hostname & protocol for your site
+gitlab_host: https://framagit.org
+gitlab_username: danialbehzadi
+mastodon_host: https://persadon.com
+mastodon_username: danialbehzadi
+
+# Handling Reading
+encoding: utf-8
+
+# Outputting
+permalink: /:year/:title/
+paginate: 3
+paginate_path: "/page:num/"
+timezone: Asia/Tehran
+
+# Build settings
+
+# Conversion
+markdown: kramdown
+
+# Gems
+plugins:
+        - jekyll-paginate

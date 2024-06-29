@@ -117,3 +117,25 @@ p {
 	}
 
 }
+
+@media all and (max-width: 384px) {
+	body, header, .button {
+		gap: 0rem;
+	}
+	.title {
+		font-family: "Estedad-Mad", "Estedad-MDarvishi", sans-serif;
+		font-weight: normal;
+		text-align: center;
+		font-size: 36pt;
+		line-height: 1;
+	}
+
+	.button, .button-menu{
+		margin: .4rem;
+		font-size: 13pt;
+	}
+
+	svg{
+		height: 1.4rem;
+	}
+}

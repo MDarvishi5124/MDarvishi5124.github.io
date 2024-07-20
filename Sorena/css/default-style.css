@@ -1,0 +1,142 @@
+html{
+    min-width: 250px;
+}
+
+body{
+    margin: 2em 12.5% 2em 12.5%;
+    font-size: 18px;
+    direction: rtl;
+    font-family: "Vazirmatn", sans-serif;
+    font-variation-settings: "wght" 400;
+    line-height: 1.6;
+    word-break: break-word;
+    text-decoration:none;
+    font-weight: 400;
+    min-height:100%;
+    height:auto;
+  }
+
+h1,h2,h3,h4,h5,h6{
+    font-variation-settings: "wght" 600;
+    color:rgb(0, 0, 0);
+}
+
+h2{
+    margin: 25px 0px 10px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+h6{
+    font-size: 20px;
+    margin: 25px 0px 10px 0px;
+}
+
+::selection {
+    background-color:rgb(63, 71, 79);
+    color:aliceblue;
+}
+
+svg{
+    user-select: none;
+    width: 1em;
+    height: 1em;
+}
+
+.svg-back{
+    width: 16px;
+    margin: 0px 0px 0px 5px;
+    fill:rgb(63, 71, 79);
+}
+
+h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+a{
+    color: #06d3b7;
+    text-decoration:none;
+}
+
+p{
+    font-size: 18px;
+    margin: auto;
+    line-height: 1.6;
+    word-break: break-word;
+    text-decoration:none;
+    margin-bottom: 5px;
+}
+
+.button{
+    border-radius: 10px 10px 10px 10px;
+}
+
+.footer {
+    bottom: 1em;
+    left: 3em;
+    height: 44px;
+    width: 100%;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.back-button{
+    display: flex;
+    font-family: "Sorena", sans-serif;
+    font-size: 1.2rem;
+    background-color: #f0f0f0;
+    margin: 10px 0px 10px 0px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 8px 22px 10px 22px;
+    font-size: 16px;
+    border: 0px;
+    cursor: pointer;
+    box-shadow: inset 0 -4px #e2e2e2;
+}
+
+.footer-lang{
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: darkgray;
+}
+
+pre{
+    text-align: left;
+    direction: ltr;
+    background-color: #00000010;
+    line-height: 1.2;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+@media all and (min-width: 384px) and (max-width: 767px) {
+    body{
+        font-size: 18px;
+        margin: 2em 7.5% 2em 7.5%;
+      }
+    
+    p{
+        font-size: 18px;
+        margin: auto;
+        line-height: 1.5;
+    }
+}
+
+@media all and (max-width: 384px) {
+    body{
+        font-size: 16px;
+        margin: 2em 5% 2em 5%;
+      }
+    
+    p{
+        font-size: 16px;
+        margin: auto;
+        line-height: 1.5;
+    }
+
+}

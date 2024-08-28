@@ -15,6 +15,10 @@ body{
     height:auto;
   }
 
+h1{
+    font-family: Estedad-Mad;
+}
+
 h1,h2,h3,h4,h5,h6{
     color:rgb(63, 71, 79);
 }

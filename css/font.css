@@ -3,7 +3,7 @@
     src: url("EstedadMDarvishi-RegularDS1.woff2");
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
 }
 
 @font-face {
@@ -11,5 +11,33 @@
     src: url("EstedadMDarvishi-BoldDS2.woff2");
     font-weight: 700;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Estedad-Mad";
+    src: url("Estedad-Mad.woff2");
+    font-weight: 1000;
+    font-style: normal;
+    font-display: fallback;
+}
+
+
+@font-face {
+    font-family: "Arad-VF";
+    src: url("Arad-VF.woff2");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Arad";
+    src: url("Arad-Regular.woff2");
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Arad";
+    src: url("Arad-Bold.woff2");
+    font-weight: 700;
+    font-display: fallback;
 }

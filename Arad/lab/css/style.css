@@ -1,0 +1,170 @@
+body {
+    font-family: 'Arad', sans-serif;
+    height: 100%;
+    font-size: 18px;
+    margin: 2.5% 5% 2.5% 5%;
+    overflow: hidden; /* جلوگیری از اسکرول صفحه */
+    height: 100vh; /* ارتفاع صفحه به اندازه ارتفاع پنجره مرورگر */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editor {
+    padding: 0px;
+    flex-grow: 1; /* پر کردن فضای باقی‌مانده */
+    overflow-y: auto; /* اسکرول داخلی برای ویرایشگر متن */
+    text-align: right;
+}
+
+.editor:hover {
+    border: 0px;
+}
+
+.controls {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    width: 100%;
+}
+.controls label {
+    margin-right: 10px;
+}
+
+.controls .lb1 {
+    margin-left: 10px;
+}
+
+.controls .lb2 {
+    margin-right: 0px;
+}
+
+.controls input[type="number"] {
+    width: 40px;
+    border: 0px;
+	background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-left: 10px;
+}
+
+.controls1, .controls2 {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px 15px 10px;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 0px 10px;
+}
+
+input[type="range"] {
+    margin-top: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+	background-color: rgb(245, 245, 245);
+    height: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    outline: 0;
+    border: none;
+    width: 80px;
+}
+
+input[type="checkbox"]:checked {
+    color: black;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 14pt;
+    border: 1px solid black;
+    background-color: #00cc99;
+}
+
+select {
+    font-family: "Arad";
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 15px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    padding: 7px 15px;
+}
+
+p {
+    margin: 0px;
+}
+
+@supports (font-variation-settings: normal) {
+    body, .button {
+    font-family: "Arad-VF", "Arad", sans-serif;
+    }
+}
+
+@media all and (max-width: 920px) {
+    .option {
+        margin: 0px 5px 0px 5px;
+    }
+    
+    .controls1, .controls2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .controls input[type="number"] {
+        padding: 10px 10px;
+    }
+}
+
+@media all and (max-width: 640px) {
+	body {
+		gap: 0rem;
+	}
+
+	svg{
+		height: 1.4rem;
+	}
+
+    label {
+        font-size: 15px;
+    }
+    
+    .controls input[type="number"] {
+        font-size: 14px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 8px 7px;
+    }
+
+    .controls input[type="range"]  {
+        width: 60px;
+    }
+
+    select {
+        font-size: 14px;
+    }
+
+    .option {
+        margin: 0px;
+    }
+
+    .controls1 label {
+        margin-right: 5px;
+    }
+
+    .controls2 label {
+        margin-right: 0px;
+    }
+
+    .controls .lb1 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}

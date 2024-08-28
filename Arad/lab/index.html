@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<title>Lab | Arad Font</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Mohammad Darvishi">
+	<meta name="description" content="آزمایشگاه فونت آراد جایی است که می‌توانید فونت آراد را با متن‌های مختلف در اندازه‌های مختلف و با فعال‌نمودن قابلیت‌های مختلف آزمایش کنید.">
+	<meta name="robots" content="index, follow"/>
+	<meta name="language" content="English"/>
+	<meta name="revisit-after" content="7 day"/>
+	<link rel="icon" href="../icon.svg" type="image/png">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="../css/header.css">
+	<link type="text/css" rel="stylesheet" href="../../css/font.css">
+</head>
+
+<header>
+
+	<div>
+		<a href="https://mdarvishi5124.github.io/Arad">
+			<button class="md-button">		
+				<svg class="md-svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+			</button>
+		</a>
+	</div>
+
+	<div>
+		<a href="https://mdarvishi5124.github.io/Arad/labs">
+			<button class="md-button">		
+				<svg class="md-svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M200-120q-51 0-72.5-45.5T138-250l222-270v-240h-40q-17 0-28.5-11.5T280-800q0-17 11.5-28.5T320-840h320q17 0 28.5 11.5T680-800q0 17-11.5 28.5T640-760h-40v240l222 270q32 39 10.5 84.5T760-120H200Zm0-80h560L520-492v-268h-80v268L200-200Zm280-280Z"/></svg>
+			</button>
+		</a>
+	</div>
+
+	<div>
+		<a href="https://mdarvishi5124.github.io/Arad/docs">
+			<button class="md-button">		
+				<svg class="md-svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M560-564v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-600q-38 0-73 9.5T560-564Zm0 220v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-380q-38 0-73 9t-67 27Zm0-110v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-490q-38 0-73 9.5T560-454ZM260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-494Z"/></svg>
+			</button>
+		</a>
+	</div>
+
+	<div class="language-dropdown">
+		<button class="dropdown-btn" onclick="toggleDropdown()">
+			<svg height="24px" viewBox="0 -960 960 960" width="24px">
+				<path d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"/>
+			</svg>
+		</button>
+		<div class="dropdown-content" id="dropdown">
+            <a>English</a>
+			<a href="../fa/lab/">فارسی</a>
+		</div>
+	</div>
+	
+	<script>
+		function toggleDropdown() {
+			var dropdown = document.getElementById("dropdown");
+			if (dropdown.style.display === "block") {
+				dropdown.style.display = "none";
+			} else {
+				dropdown.style.display = "block";
+			}
+		}
+	
+		window.onclick = function(event) {
+			if (!event.target.closest('.dropdown-btn')) {
+				var dropdowns = document.getElementsByClassName("dropdown-content");
+				for (var i = 0; i < dropdowns.length; i++) {
+					var openDropdown = dropdowns[i];
+					if (openDropdown.style.display === "block") {
+						openDropdown.style.display = "none";
+					}
+				}
+			}
+		}
+	</script>
+	</div>
+</header>
+
+<body>
+    <div class="controls">
+        <div class="controls1">
+        <div class="option">
+            <label for="fontSize">Font Size:</label>
+            <div>
+                <input type="range" id="fontSize" min="6" max="100" value="18" step="0.1">
+                <input type="number" id="fontSizeNumber" min="6" max="100" value="18" step="0.1">
+            </div>
+        </div>
+        <div class="option">
+            <label for="lineHeight">Line Height:</label>
+            <div>
+                <input type="range" id="lineHeight" min="1" max="3" step="0.1" value="1.5">
+                <input type="number" id="lineHeightNumber" min="1" max="3" step="0.1" value="1.5">
+            </div>
+        </div>
+        <div class="option">
+            <label for="fontWeight">Font Weight:</label>
+            <div>
+                <input type="range" id="fontWeight" min="100" max="800" step="1" value="400">
+                <input type="number" id="fontWeightNumber" min="100" max="800" step="1" value="400">
+            </div>
+        </div>
+
+        <div class="option">
+            <label class="lb2" for="opticalSize">Dots Style:</label>
+            <select class="sl1" id="opticalSize">
+                <option value="1">1- Discrete square dots</option>
+                <option value="2">2- Continuous square dots</option>
+                <option value="3">3- rhombus dots</option>
+            </select>
+        </div>
+    </div>
+        <div class="controls2">
+            <div><label><input type="checkbox" id="calt" checked> calt</label></div>
+            <div><label><input type="checkbox" id="kern" checked> kern</label></div>
+            <div><label><input type="checkbox" id="tnum"> tnum</label></div>
+            <div><label><input type="checkbox" id="ss01"> ss01</label></div>
+            <div>
+            <label class="lb1" for="presetText">Preset Text:</label>
+            <select id="presetText">
+            <option value="توجه به فاصله‌گذاری هنگام حروف‌چینی اهمیت بسزایی در آسان خوانده شدن مطلب دارد. برای جدا کردن کلمات از هم از کلید فاصله استفاده می‌شود که عبارت است از فاصلۀ استانداردی که مقدار(space) آن هنگام طراحی قلم مشخص شده است. برای جدا کردن کلمات از یک‌دیگر، مجاز به یک‌بار استفاده از این کلید هستیم. چنان‌چه بعد از واژه‌ها از علامتهای «» ():؛،؟! استفاده کنیم، این فاصله حذف می‌شود و بعد از علامت قرار می‌گیرد. در کلمات مرکب مانند: نام‌گذاری، می‌شود، رفته‌اند و … برای جلوگیری از دوپاره شدن واژه، می‌توان هنگام حروف‌چینی از اندازۀ مناسب‌تری به‌عنوان نیم‌فاصله که معمولاً نصف اندازۀ فاصله است استفاده کرد. چنین عملی مانع از جدا افتادن دوباره کلمه در دو سطر مختلف می‌شود. در یک متن طولانی مثل یک مقاله، یا متن یک کتاب، کنترل تمام کلمات مرکب برای جلوگیری از دوباره‌کاری سخت و غیرحرفه‌ای است. اگر در طراحی قلم نیم‌فاصله در نظر گرفته شده باشد، از پدید آمدن چنین عملی جلوگیری می‌شود. نقش یک طراح در کنترل فاصله‌ها در همین حوزه تعریف می‌شود و طراح یا حروف‌چین مجاز به فاصله‌گذاری کاذب بین واژه‌های متن نیستند. جمع یا فشردن غیر معمول کلمات به یک‌دیگر (از سوی کاربران غیرحرفه‌ای)، تعادل سطح خاکستری (سیاهی و سفیدی) متن را برهم میزند و خوانده شدن متن را دشوار و گاه غیرممکن می‌کند. افزودن عرض حروف و کشیدن حروف همچنین، تناسبات افقی و عمودی فرم حروف را دگرگون می‌کند و به خوانده شدن ستون متن لطمۀ قابل‌توجهی وارد می‌کند. در قلم‌های متنوع لاتین، سبک‌های گوناگونی مانند: به‌هم فشرده(Condensed) و از هم بازشده(Extend) در خانوادۀ بسیاری از قلم‌ها گنجانده که اولاً از پیش طراحی شده‌اند و با یک دستور اتوماتیک برای همۀ حروف پدید نیامده‌اند و دوم آن‌که موارد استفاده آن شامل متمایز کردن بخشی از متن و یا در بعضی موارد برای عنوان‌های کوتاه می‌باشد. برای تنظیم فاصله در حروف عنوان، طراحان آزادی عمل بیشتری دارند. فاصله طبیعی بین کلمات در برخی عنوان‌های کوتاه به‌دلیل درشت‌تر شدن از حد معمول، نیاز به اصلاح دارند.">Farsi</option>
+            <option value="الفولاذ الدمشقي أو الفولاذ المدمشق هو نوع من الفولاذ المستخدم لصناعة نصل السيوف، والذي اشتهرت به مدينة دمشق وإليها ينسب. كانت السيوف الدمشقية تصنع من الفولاذ الهندواني (فولاذ بلاد الهند)؛ وكانت تتميّز بنقوشها الفريدة المبرقشة والمحزّمة؛ كما أنّها اشتهرت بصرامتها ومقاومتها للاهتراء، وبقابلية الشحذ والسَّنّ إلى حدّ مطواع شديد القطع. نال السيف الدمشقي شهرةً واسعةً عبر التاريخ، وأحاطت به العديد من القصص والروايات، كالقدرة على قطع شعرةٍ ساقطةٍ على نصله.
+            سمّي هذا النوع من الفولاذ بالدمشقي نسبة إلى العاصمة السورية دمشق، والتي كانت هذه السيوف تصنع وتباع فيها، كما أنّ النموذج النمطي المميّز لها أصبح مشهوراً بشكل أصبح يطلق تسميته أيضاً على أيّ فولاذٍ يحمل تلك المواصفات، مثلما هو الحال مع زخارف البروكار الدمشقي.كانت صناعة السيوف الدمشقية حرفةً يحوطها الكثير من السرّية، وكان المهرة من الحرفيين يتناقلونها من جيلٍ إلى جيل، إلى أن اندثرت، ولا يوجد تدوينات للطريقة الأصلية التي كانت تستخدم في الماضي.
+            رغم اختلاف المواد الأولية المستخدمة وطرق وتقنيات التصنيع إلّا أنّه جرت محاولات حديثة لكشف سر التركيب وطريقة التحضير؛ إذ بيّنت الأبحاث باستخدام وسائل تقنية حديثة وجود أسلاك وأنابيب نانوية كربونية في تركيب سيفٍ مصنوعٍ من الفولاذ الدمشقي. وخلصت الدراسات أنّه خلال عملية الصهر لتشكيل صبّات الفولاذ الهندواني المستخدم في صناعة السيوف الدمشقية كانت أجزاء نباتية معروفة من الأوراق والأغصان الخشبية تضاف بمقدارٍ محدّدٍ إلى الخلطة، وذلك كمصدر كربوني، بالإضافة إلى استخدام أنواع من الخامات الغنيّة بالحديد والمشوبة بعناصر كيميائية أخرى؛ وفي مرحلة لاحقة كانت الصبّات تخضع للتطريق وتشكّل على هيئة أنصال. على الرغم من أنّه توجد حالياً أنواع تفوق الفولاذ الدمشقي القديم في أدائها، إلّا أنّ التفاعلات الكيميائية المرافقة لعملية التصنيع آنذاك جعلت السيوف الدمشقية مميّزة عن أقرانها في عصرها، إذ كان الفولاذ الدمشقي فائق اللدونة وفائق الصلابة في نفس الوقت.">Arabic</option>
+            <option value="بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ
+            وَالْفَجْرِ ﴿۱﴾ وَلَيَالٍ عَشْرٍ ﴿۲﴾ وَالشَّفْعِ وَالْوَتْرِ ﴿۳﴾ وَاللَّيْلِ إِذَا يَسْرِ ﴿۴﴾ هَلْ فِي ذَلِكَ قَسَمٌ لِذِي حِجْرٍ ﴿۵﴾ أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ ﴿۶﴾ إِرَمَ ذَاتِ الْعِمَادِ ﴿۷﴾ الَّتِي لَمْ يُخْلَقْ مِثْلُهَا فِي الْبِلَادِ ﴿۸﴾ وَثَمُودَ الَّذِينَ جَابُوا الصَّخْرَ بِالْوَادِ ﴿۹﴾ وَفِرْعَوْنَ ذِي الْأَوْتَادِ ﴿۱۰﴾ الَّذِينَ طَغَوْا فِي الْبِلَادِ ﴿۱۱﴾ فَأَكْثَرُوا فِيهَا الْفَسَادَ ﴿۱۲﴾ فَصَبَّ عَلَيْهِمْ رَبُّكَ سَوْطَ عَذَابٍ ﴿۱۳﴾ إِنَّ رَبَّكَ لَبِالْمِرْصَادِ ﴿۱۴﴾ فَأَمَّا الْإِنْسَانُ إِذَا مَا ابْتَلَاهُ رَبُّهُ فَأَكْرَمَهُ وَنَعَّمَهُ فَيَقُولُ رَبِّي أَكْرَمَنِ ﴿۱۵﴾ وَأَمَّا إِذَا مَا ابْتَلَاهُ فَقَدَرَ عَلَيْهِ رِزْقَهُ فَيَقُولُ رَبِّي أَهَانَنِ ﴿۱۶﴾ كَلَّا بَلْ لَا تُكْرِمُونَ الْيَتِيمَ ﴿۱۷﴾ وَلَا تَحَاضُّونَ عَلَى طَعَامِ الْمِسْكِينِ ﴿۱۸﴾ وَتَأْكُلُونَ التُّرَاثَ أَكْلًا لَمًّا ﴿۱۹﴾ وَتُحِبُّونَ الْمَالَ حُبًّا جَمًّا ﴿۲۰﴾ كَلَّا إِذَا دُكَّتِ الْأَرْضُ دَكًّا دَكًّا ﴿۲۱﴾ وَجَاءَ رَبُّكَ وَالْمَلَكُ صَفًّا صَفًّا ﴿۲۲﴾ وَجِيءَ يَوْمَئِذٍ بِجَهَنَّمَ يَوْمَئِذٍ يَتَذَكَّرُ الْإِنْسَانُ وَأَنَّى لَهُ الذِّكْرَى ﴿۲۳﴾ يَقُولُ يَا لَيْتَنِي قَدَّمْتُ لِحَيَاتِي ﴿۲۴﴾ فَيَوْمَئِذٍ لَا يُعَذِّبُ عَذَابَهُ أَحَدٌ ﴿۲۵﴾ وَلَا يُوثِقُ وَثَاقَهُ أَحَدٌ ﴿۲۶﴾ يَا أَيَّتُهَا النَّفْسُ الْمُطْمَئِنَّةُ ﴿۲۷﴾ ارْجِعِي إِلَى رَبِّكِ رَاضِيَةً مَرْضِيَّةً ﴿۲۸﴾ فَادْخُلِي فِي عِبَادِي ﴿۲۹﴾ وَادْخُلِي جَنَّتِي ﴿۳۰﴾">Quran</option>
+            <option value="بو گون پسیكولوژی (روان شناسی) علمی ایچری‌سینده مؤوضوع ائدیلن چوخو آنلاییش، حادیثه و فئنومئن آنتیک هیندیستان، چین و میصیر کیمی مدنیت‌لرده ده فلسفی ماراغا مظهر اوْلموشدور. افلاطون و آریستوتل (ارسطو) کیمی یونان فیلوسوف‌لاردا پسیكولوژی موختلیف مؤوضوعلارا یازین‌لارین و دوشونجه‌لرینده یئر وئرمیش‌لر. بونونلا بیرلیکده پسیكولوژی‌ده کلینیکا و تجروبی یاناشمالار فاکتور اوْرتا عصرلردکی موسلمان علم آدام‌لاری طرفیندن باشلادیلمیش‌دیر. عقل خسته‌خانالاری اولاراق تعیین اوْلونا بیله‌جک ایلک قوروم‌لار (تشکیلات‌لار) ایسلام توْرپاقلاریندا. عصرده اورتایا چیخمیش‌دیر. نئجه کی موسلمان حکیم‌لر ائرکن دؤورلردن اعتیباراًعقل خسته‌لیگی اولاراق تعبیر ائتدیک‌لری پوزوقلوق‌لارا قارشی موختلیف موعالیجه‌لر (تراپی‌لر)، اویغون‌لامالار (تطبیق‌لر) اینکیشاف ائتدیرمه‌یه باشلامیش‌دیر. احمد بین سئهل ال-بلخی (Ahmed bin Sehl el-Belhî) بدن و روح خسته‌لیکلرینی آییران و آیری-آیری آراش‌دیران، موباحیثه ائدن ایلک ایسیم‌لردن‌دیر؛ روحی خسته‌لیکلرین زامان ایچینده بدن‌ین خسته‌لنمه‌سینه‌ده یول آچا بیلجه‌یینی ده اورتایا آتمیشدیر. بون‌دان باشقا بۇ گون دئپرئسسیا (افسردگی) اولاراق آدلان‌دیریلان پوزوق‌لوغو تعیین ائتمیش و ایکی تیپین‌دن بحث ائتمیشدیر: بیرینجی‌سی بیر ایتکی و یا موفقیت‌سیزلیک کیمی سبب‌لردن میدانا گله بیلن و پسیكولوژی یوللارلا موعالیجه ائدیله بیله‌جک دئپرئسسیا، دیگری ایسه سبب‌لری بیلینمه‌ین لاکین احتیمال‌لا فیزیولوژی سبب‌لردن اوْلان و فیزیکی طیب اوصول‌لاری‌لا موعالیجه ائدیله بیله‌جک اولان‌دیر. پسیكولوژی ساحه‌سینده بیر باشقا اهمیتلی علم آدامی دا ابن-ی سینادیر. ابن‌سینا، بۇ گون نؤروپسیکیاتریک حال‌لار کیمی معین ائدیلمیش هالوسیناسیون، اینسومنیا، مانع، کابوس، مئلانخولیا، دئمانس، ائپیلئپسیا، ایفلیج و ترئمور کیمی بیر چوْخ وضعیتی آراشدیرمیش و تعیین ائتمیشدیر.">Türkcə</option>
+            <option value="کراچی (سندھی: ڪراچي) (انگریزی: Karachi) پاکستان کا سب سے بڑا شہر اور صنعتی، تجارتی، تعلیمی، مواصلاتی و اقتصادی مرکز ہے۔ کراچی دنیا کاچهٹا بڑا شہر ہے۔ کراچی پاکستان کے صوبہ سندھ کا دارالحکومت ہے۔ شہر دریائے سندھ کے مغرب میں بحیرہ عرب کی شمالی ساحل پر واقع ہے۔ پاکستان کی سب سے بڑی بندرگاہ اور ہوائی اڈا بھی کراچی میں قائم ہے۔ کراچی 1947ء سے 1960ء تک پاکستان کا دار الحکومت بھی رہا۔ موجودہ کراچی کی جگہ پر واقع قدیم ماہی گیروں کی بستی کا نام مائی کولاچی تھا۔ جو بعد میں بگڑ کر کراچی بن گیا انگریزوں نے انیسویں صدی میں اس شہر کی تعمیر و ترقی کی بنیادیں ڈالیں۔ 1947ء میں پاکستان کی آزادی کے وقت کراچی کو نو آموز مملکت کا دار الحکومت منتخب کیا گیا۔ اس کی وجہ سے شہر میں لاکھوں مہاجرین کا دخول ہوا۔ پاکستان کا دار الحکومت اور بین الاقوامی بندرگاہ ہونے کی وجہ سے شہر میں صنعتی سرگرمیاں دیگر شہروں سے قبل شروع ہو گئیں۔ 1959ء میں پاکستان کے دار الحکومت کی اسلام آباد منتقلی کے باوجود کراچی کی آبادی اور معیشت میں ترقی کی رفتار کم نہیں ہوئی۔
+            پورے پاکستان سے لوگ روزگار کی تلاش میں کراچی آتے ہیں اور اس وجہ سے یہاں مختلف مذہبی، نسلی اور لسانی گروہ آباد ہیں۔ کراچی کو اسی وجہ سے چھوٹا پاکستان بھی کہتے ہیں۔ ان گروہوں کی باہمی کشیدگی کی وجہ سے 80 اور 90 کی دہائیوں میں کراچی لسانی فسادات، تشدد اور دہشت گردی کا شکار رہا۔ بگڑتے ہوئے حالات کو سنبھالنے کے ليے پاک فوج کو بھی کراچی میں مداخلت کرنی پڑی۔ اکیسویں صدی میں تیز قومی معاشی ترقی کے ساتھ ساتھ کراچی کے حالات میں بہت تبدیلی آئی ہے۔ کراچی کی امن عامہ کی صورت حال کافی بہتر ہوئی ہے اور شہر میں مختلف شعبوں میں ترقی کی رفتار میں بہت اضافہ ہوا ہے۔
+            کراچی دریائے سندھ کے دہانے کی شمالی حد پر واقع ہے۔ شہر ایک قدرتی بندرگاہ کے گرد وجود پایا۔ کراچی 52´ 24° شمال اور 03´ 67° مشرق پر واقع ہے۔">Urdu</option>
+            <option value="فۆنت بریتییە لە کۆی هەندێک پیت (حرف)، وشە، شێوە و نیگار کە لە زمانێکی تایبەتیدا وەک زمانی کوردی، فارسی یان ئینگلیسیدا دیاری دەکرێن کە هێمای تایبەتی خۆیان هەیە و نیشاندەری پیتەکانی ئەو زمانانەن. فۆنتەکان دەتوانن زیاتر لە یەک زمان لەخۆیان بگرن و هەڵگری فۆنتی زمانێکی تریش بن. فۆنت سەرەکی‌ترین ئامێری جوانکاری لە بەکارهێنانی ڕۆژنامە، گۆڤار و شێوەی تری گڕافیکیدایە. بەکارهێنانی فۆنتی جۆراوجۆر دەبێتە هۆی چێژبەخشین بە خوێندنەوە. قەبارەی فۆنتەکان لەسەر بنەما و یەکەی «پیکسێڵ» داڕێژراوە. فۆڕمەتی فۆنتەکان بەچەند جۆرێکی تایبەتە کە بریتین لە TTF، OTF و ... و دوای داونلۆدکردن و دابەزاندن دەتوانی کەڵکیان لێوەربگری. نەبوونی فۆنتی ستاندارد و یونیکۆدی کوردی لە ماوەی چەند ساڵی رابردوودا یەکێک بووە لە سەرەکیترین هۆکارەکانی پێشنەکەوتنی باشتربوونی نووسین و خوێندنەوە لە کۆمەڵگای کوردیدا و نەبوونی داهێنەری فۆنتی کوردی یەکێکە لەو کێشانە کە پێویستە بە زووترین کات داهێنەران و دیزاینەرانی کورد هەوڵ و کۆششی خۆیان بخەنە گەڕ بۆ درووستکردنی فۆنتی ستاندارد و یونیکۆدی کوردی. لەگەڵ هەموو ئەو کەند و کۆسپانەی رێگربوون لە بەرەوپێشچوونی فۆنتی کوردی و بەکارهێنانی یونیکۆد وەکوو ستانداردێک، بەڵام دیسان لەلایەن چەند دڵسۆزانێکەوە بە خۆبەخشانە هەوڵی کارلەسەرکردنی فۆنت و کیبۆردی کوردی هەر بەردەوام بووە و هیوادارین لەمەودوا زۆر بە تایبەتیتر کاری لەسەر بکرێت. یەکێک لە کێشە سەرەکیەکانی نەبوونی کیبۆرد و فۆنتی کوردی ئەوە بووە کە ناچاری درووست کردووە کە کیبۆرد و فۆنتی ناکوردی بەکار بهێنرێت و ئەوەش لە کۆکردنەوە و دۆزینەوە زانیاری و داتاکان لەسەر هێڵی ئینتەرنێتیش بووەتە کۆسپ و تاکی کورد ناتوانێت بە تەواوەتی کەڵکی لێوەربگرێت.">Kurdi</option>
+            <option value="مازرون دریا یا کاسپین دریا اتا گت ِدریاچه هسته که جنوب‌وَر جه ایران ره، شمال‌وَر جه روسیه و قزاقستون ره، غرب‌وَر جه آذربایجون و شرق‌وَر جه ترکمنستون جه محدود بونه. چون کاسپین، جهون ِگت‌ترین دریاچه هسته وِ رِه دریو هم گانّه.
+            ایران دولت اتا بخشنومه دله مردم ره مجبور هاکرده که اینتا دریای نوم ره خزر بوّن. خزر اَتّا وحشی قوم نوم هسّه که ساسانیون دوران به ایران سامون ره حمله کردِنِه و رومیون جه یعنی ایران دشمن جه هم‌پیمون بینه. این وحشی قوم زرد نژاد جه بینه که کاسپین دریای پلی چادر بزو بینه و صحراگردی و تاراج کردنه و ویشته كورا درکا اییَمونه. انوشیروان و قباد، دِتا ایرانی شاه، وشون جه جنگ هکردِنه. چونکه این وحشی قوم ایران سامون سر قتل و غارت کردنه. جنگ این وحشی قوم جه به نفع ایران تموم بَیّه.
+            خزران خاسسنه ابريشم راه ره زير نظر بئيرن تا اينتا رهگذر جه بازرگاني روابط دله بیزانس جه اتا خله سود بورن. سبب اتحاد خزران تركون جه همينتا بيئه. بعدا روزگار خسروانوشيروان اول دله و هرمز چاروم، خسرو دوم و كواذ دوم تا پايان شاهنشاهي ساساني، خزران دوش به دوش تركان و روميان با سپاه ساساني پيكار هكردنه و اتا خله ظلم بر مردم قفقاز روا داشتنه">Mazeruni</option>
+            <option value="Although typically applied to printed, published, broadcast, and reproduced materials in contemporary times, all words, letters, symbols, and numbers written alongside the earliest naturalistic drawings by humans may be called typography. The uneven spacing of the impressions on brick stamps found in the Mesopotamian cities of Uruk and Larsa, dating from the second millennium B.C., may be evidence of type, wherein the reuse of identical characters was applied to create cuneiform text. Babylonian cylinder seals were used to create an impression on a surface by rolling the seal on wet clay. Typography also was implemented in the Phaistos Disc, an enigmatic Minoan printed item from Crete, which dates to between 1850 and 1600 B.C. It has been proposed that Roman lead pipe inscriptions were created with movable type printing, but German typographer Herbert Brekle recently dismissed this view.(from Wikipedia) 0123456789!@#$%^&*()_+-={}[]:">English</option>
+        </select>
+        </div>
+
+        <div>
+        <label class="lb1" for="textAlign">Text Align:</label>
+        <select id="textAlign">
+            <option value="right">Rtl</option>
+            <option value="center">Center</option>
+            <option value="left">Ltr</option>
+            <option value="justify">Justify</option>
+        </select>
+        </div>
+    </div>
+    </div>
+    <div class="editor" contenteditable="true"> <p>توجه به فاصله‌گذاری هنگام حروف‌چینی اهمیت بسزایی در آسان خوانده شدن مطلب دارد. برای جدا کردن کلمات از هم از کلید فاصله استفاده می‌شود که عبارت است از فاصلۀ استانداردی که مقدار(space) آن هنگام طراحی قلم مشخص شده است. برای جدا کردن کلمات از یک‌دیگر، مجاز به یک‌بار استفاده از این کلید هستیم. چنان‌چه بعد از واژه‌ها از علامتهای «» ():؛،؟! استفاده کنیم، این فاصله حذف می‌شود و بعد از علامت قرار می‌گیرد. در کلمات مرکب مانند: نام‌گذاری، می‌شود، رفته‌اند و … برای جلوگیری از دوپاره شدن واژه، می‌توان هنگام حروف‌چینی از اندازۀ مناسب‌تری به‌عنوان نیم‌فاصله که معمولاً نصف اندازۀ فاصله است استفاده کرد. چنین عملی مانع از جدا افتادن دوباره کلمه در دو سطر مختلف می‌شود. در یک متن طولانی مثل یک مقاله، یا متن یک کتاب، کنترل تمام کلمات مرکب برای جلوگیری از دوباره‌کاری سخت و غیرحرفه‌ای است. اگر در طراحی قلم نیم‌فاصله در نظر گرفته شده باشد، از پدید آمدن چنین عملی جلوگیری می‌شود. نقش یک طراح در کنترل فاصله‌ها در همین حوزه تعریف می‌شود و طراح یا حروف‌چین مجاز به فاصله‌گذاری کاذب بین واژه‌های متن نیستند. جمع یا فشردن غیر معمول کلمات به یک‌دیگر (از سوی کاربران غیرحرفه‌ای)، تعادل سطح خاکستری (سیاهی و سفیدی) متن را برهم میزند و خوانده شدن متن را دشوار و گاه غیرممکن می‌کند. افزودن عرض حروف و کشیدن حروف همچنین، تناسبات افقی و عمودی فرم حروف را دگرگون می‌کند و به خوانده شدن ستون متن لطمۀ قابل‌توجهی وارد می‌کند. در قلم‌های متنوع لاتین، سبک‌های گوناگونی مانند: به‌هم فشرده(Condensed) و از هم بازشده(Extend) در خانوادۀ بسیاری از قلم‌ها گنجانده که اولاً از پیش طراحی شده‌اند و با یک دستور اتوماتیک برای همۀ حروف پدید نیامده‌اند و دوم آن‌که موارد استفاده آن شامل متمایز کردن بخشی از متن و یا در بعضی موارد برای عنوان‌های کوتاه می‌باشد. برای تنظیم فاصله در حروف عنوان، طراحان آزادی عمل بیشتری دارند. فاصله طبیعی بین کلمات در برخی عنوان‌های کوتاه به‌دلیل درشت‌تر شدن از حد معمول، نیاز به اصلاح دارند.</p></div>
+    <script>
+        const editor = document.querySelector('.editor');
+        const fontSizeInput = document.getElementById('fontSize');
+        const fontSizeNumber = document.getElementById('fontSizeNumber');
+        const lineHeightInput = document.getElementById('lineHeight');
+        const lineHeightNumber = document.getElementById('lineHeightNumber');
+        const fontWeightInput = document.getElementById('fontWeight');
+        const fontWeightNumber = document.getElementById('fontWeightNumber');
+        const caltCheckbox = document.getElementById('calt');
+        const kernCheckbox = document.getElementById('kern');
+        const tnumCheckbox = document.getElementById('tnum');
+        const ss01Checkbox = document.getElementById('ss01');
+        const presetTextSelect = document.getElementById('presetText');
+        const opticalSizeSelect = document.getElementById('opticalSize');
+        const textAlignSelect = document.getElementById('textAlign');
+
+        fontSizeInput.addEventListener('input', () => {
+            editor.style.fontSize = fontSizeInput.value + 'px';
+            fontSizeNumber.value = fontSizeInput.value;
+        });
+
+        fontSizeNumber.addEventListener('input', () => {
+            editor.style.fontSize = fontSizeNumber.value + 'px';
+            fontSizeInput.value = fontSizeNumber.value;
+        });
+
+        lineHeightInput.addEventListener('input', () => {
+            editor.style.lineHeight = lineHeightInput.value;
+            lineHeightNumber.value = lineHeightInput.value;
+        });
+
+        lineHeightNumber.addEventListener('input', () => {
+            editor.style.lineHeight = lineHeightNumber.value;
+            lineHeightInput.value = lineHeightNumber.value;
+        });
+
+        fontWeightInput.addEventListener('input', () => {
+            editor.style.fontWeight = fontWeightInput.value;
+            fontWeightNumber.value = fontWeightInput.value;
+        });
+
+        fontWeightNumber.addEventListener('input', () => {
+            editor.style.fontWeight = fontWeightNumber.value;
+            fontWeightInput.value = fontWeightNumber.value;
+        });
+
+        caltCheckbox.addEventListener('change', updateFontFeatures);
+        kernCheckbox.addEventListener('change', updateFontFeatures);
+        tnumCheckbox.addEventListener('change', updateFontFeatures);
+        ss01Checkbox.addEventListener('change', updateFontFeatures);
+
+        presetTextSelect.addEventListener('change', () => {
+            editor.textContent = presetTextSelect.value;
+        });
+
+        opticalSizeSelect.addEventListener('change', () => {
+            editor.style.fontVariationSettings = `"DSTY" ${opticalSizeSelect.value}`;
+        });
+
+        textAlignSelect.addEventListener('change', () => {
+            editor.style.textAlign = textAlignSelect.value;
+        });
+
+        function updateFontFeatures() {
+            let features = [];
+            if (caltCheckbox.checked) features.push('"calt" on');
+            else features.push('"calt" off');
+            if (kernCheckbox.checked) features.push('"kern" on');
+            else features.push('"kern" off');
+            if (tnumCheckbox.checked) features.push('"tnum" on');
+            else features.push('"tnum" off');
+            if (ss01Checkbox.checked) features.push('"ss01" on');
+            else features.push('"ss01" off');
+            editor.style.fontFeatureSettings = features.join(', ');
+        }
+
+        // Initialize with default settings
+        updateFontFeatures();
+    </script>
+</body>
+</html>

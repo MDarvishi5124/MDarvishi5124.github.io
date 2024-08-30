@@ -31,13 +31,13 @@
 
 @font-face {
     font-family: "Arad";
-    src: url("Arad-Regular.woff2");
+    src: url("Arad-RegularDots1.woff2");
     font-display: fallback;
 }
 
 @font-face {
     font-family: "Arad";
-    src: url("Arad-Bold.woff2");
+    src: url("Arad-BoldDots1.woff2");
     font-weight: 700;
     font-display: fallback;
 }

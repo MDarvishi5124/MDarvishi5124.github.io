@@ -28,6 +28,7 @@ body {
 }
 .controls label {
     margin-right: 10px;
+    font-weight: 500;
 }
 
 .controls .lb1 {
@@ -83,7 +84,7 @@ input[type="checkbox"]:checked {
 }
 
 select {
-    font-family: "Arad";
+    font-family: 'Arad';
     border: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -99,7 +100,7 @@ p {
 }
 
 @supports (font-variation-settings: normal) {
-    body, .button {
+    body, .button, select {
     font-family: "Arad-VF", "Arad", sans-serif;
     }
 }

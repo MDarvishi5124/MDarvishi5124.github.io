@@ -143,7 +143,7 @@ img {
 
 @supports (font-variation-settings: normal) {
     body, .button, .back-button {
-    font-family: "Arad-VF", "Arad", sans-serif;
+    font-family: "Arad-VF", sans-serif;
     }
 }
 

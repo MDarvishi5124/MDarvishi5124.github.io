@@ -115,7 +115,7 @@
         </div>
     </div>
         <div class="controls2">
-            <div><label><input type="checkbox" id="calt" checked> calt</label></div>
+            <div><label><input type="checkbox" id="rclt" checked> rclt</label></div>
             <div><label><input type="checkbox" id="kern" checked> kern</label></div>
             <div><label><input type="checkbox" id="tnum"> tnum</label></div>
             <div><label><input type="checkbox" id="ss01"> ss01</label></div>
@@ -160,7 +160,7 @@
         const lineHeightNumber = document.getElementById('lineHeightNumber');
         const fontWeightInput = document.getElementById('fontWeight');
         const fontWeightNumber = document.getElementById('fontWeightNumber');
-        const caltCheckbox = document.getElementById('calt');
+        const rcltCheckbox = document.getElementById('rclt');
         const kernCheckbox = document.getElementById('kern');
         const tnumCheckbox = document.getElementById('tnum');
         const ss01Checkbox = document.getElementById('ss01');
@@ -198,7 +198,7 @@
             fontWeightInput.value = fontWeightNumber.value;
         });
 
-        caltCheckbox.addEventListener('change', updateFontFeatures);
+        rcltCheckbox.addEventListener('change', updateFontFeatures);
         kernCheckbox.addEventListener('change', updateFontFeatures);
         tnumCheckbox.addEventListener('change', updateFontFeatures);
         ss01Checkbox.addEventListener('change', updateFontFeatures);
@@ -217,8 +217,8 @@
 
         function updateFontFeatures() {
             let features = [];
-            if (caltCheckbox.checked) features.push('"calt" on');
-            else features.push('"calt" off');
+            if (rcltCheckbox.checked) features.push('"rclt" on');
+            else features.push('"rclt" off');
             if (kernCheckbox.checked) features.push('"kern" on');
             else features.push('"kern" off');
             if (tnumCheckbox.checked) features.push('"tnum" on');
